@@ -1,0 +1,102 @@
+:root {
+  --pink: #ee809b;
+  --red: #9e416b;
+  --purple: #ae87bc;
+  --blue: #53758e;
+}
+
+$primary: #ee809b;
+$secondary: #53758e;
+
+img {
+  border-radius: 4px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.navbar {
+  padding: 1rem 7.5rem;
+}
+
+.hero {
+  padding: 6rem 7.5rem;
+}
+
+.featured-project,
+.testimonials,
+.contact-me,
+.site-map,
+.about-hero,
+.about,
+.inspiration,
+.project-hero,
+.project-list,
+.pdf {
+  padding: 3rem 7.5rem;
+}
+
+.featured-project-img,
+.contact-image {
+  width: 30vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.project-card {
+  max-width: 350px;
+  background-color:#ededed;
+  border-radius: 8px;
+}
+
+.project-pdf {
+  width: 75%;
+  display: flex;
+  margin: auto;
+  margin-bottom: 3rem;
+  height: 40rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero,
+  .featured-project,
+  .testimonials,
+  .contact-me,
+  .site-map,
+  .about-hero,
+  .about,
+  .inspiration,
+  .project-hero,
+  .project-list {
+    padding: 4.5rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+
+  .hero,
+  .featured-project,
+  .testimonials,
+  .contact-me,
+  .site-map,
+  .about-hero,
+  .about,
+  .inspiration,
+  .project-hero,
+  .project-list {
+    padding: 2rem 1.5rem;
+  }
+
+  .btn-large {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
+
+
+// Required
+@import "../node_modules/bootstrap/scss/bootstrap"
