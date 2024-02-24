@@ -5,8 +5,10 @@
   --blue: #53758e;
 }
 
-$primary: #ee809b;
+$primary: #ae87bc;
 $secondary: #53758e;
+$headings-font-family: "Jost";
+$font-family-base: "Work Sans";
 
 img {
   border-radius: 4px;
@@ -33,6 +35,7 @@ img {
 .inspiration,
 .project-hero,
 .project-list,
+.contact-form,
 .pdf {
   padding: 3rem 7.5rem;
 }
@@ -55,7 +58,7 @@ img {
   display: flex;
   margin: auto;
   margin-bottom: 3rem;
-  height: 40rem;
+  height: 45rem;
 }
 
 @media screen and (max-width: 768px) {

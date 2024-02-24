@@ -6,14 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<title>My Portfolio</title>
 </head>
 
 <body>
 	<!-- Nav Bar -->
 
-	<nav class="navbar navbar-expand-md navbar-r" aria-label="Fourth navbar example">
+	<nav class="navbar navbar-expand-md navbar-r sticky-top bg-white" aria-label="Fourth navbar example">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Logo" class="logo mb-2"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
@@ -22,7 +26,7 @@
 			</button>
 
 			<div class="collapse navbar-collapse" id="navbarsExample04">
-				<ul class="navbar-nav ms-auto mb-md-0 p-4">
+				<ul class="navbar-nav ms-auto mb-md-0 p-4 align-items-center">
 					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 					</li>
@@ -34,6 +38,9 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.linkedin.com/in/kelli-larrubia/"><i class="fab fa-linkedin fa-2x"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -120,7 +127,7 @@
 		  <div class="row">
 			  <div class="col-md-6 text-black text-center my-auto">
 				<h3>Please reach out and connect</h3>
-				<button class="btn btn-primary">Connect</button>
+				<a href="./contact.html" class="btn btn-primary btn-lg px-2">Connect</a>
 			  </div>
 			<div class="col-md-6 align-items-center">
 			  <img src="./images/profile/kelli3.JPG" alt="Contact Image" class="contact-image">
