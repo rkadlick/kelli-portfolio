@@ -7,11 +7,12 @@
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+	<link rel="icon" href="./images/logo.svg" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<title>My Portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<title>Kelli Larrubia - Contact</title>
 </head>
 
 <body>
@@ -49,56 +50,60 @@
 
 	  <!-- Contact Section -->
 
-	  <section class="contact-form bg-secondary">
+	  <section class="contact-form">
 		<div class="container">
 			<div class="row">
 			  <div class="col-md-8 offset-md-2">
-				<h2 class="text-center mb-4 text-white">Contact Me</h2>
+				<div class="row d-flex flex-row mb-5 justify-content-center">
+					<img src="./images/leftDivider.svg" class="divider">
+					<h2 class="sub-header text-center mb-0">Contact Me</h2>
+					<img src="./images/rightDivider.svg" class="divider">
+				</div>
 				<form action="/contact" method="post">
 				  <div class="mb-3">
-					<label for="name" class="form-label text-white">Name</label>
+					<label for="name" class="form-label">Name</label>
 					<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
 				  </div>
 				  <div class="mb-3">
-					<label for="email" class="form-label text-white">Email</label>
+					<label for="email" class="form-label">Email</label>
 					<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
 				  </div>
 				  <div class="mb-3">
-					<label for="message" class="form-label text-white">Message</label>
+					<label for="message" class="form-label">Message</label>
 					<textarea class="form-control" id="message" name="message" rows="5" placeholder="Leave Message Here..." required></textarea>
 				  </div>
-				  <button type="submit" class="btn btn-primary text-white">Submit</button>
+				  <button type="submit" class="btn btn-primary">Submit</button>
 				</form>
 			  </div>
 			</div>
 		  </div>
 	  </section>
 	  
-	  <!-- Site Map -->
+<!-- Site Map -->
 
-	  <section class="site-map">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 text-center">
-				<img src="./images/logo.svg" alt="Logo" class="logo mb-2">
-				<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="projects.html">My Work</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="contact.html">Contact</a>
-					</li>
-				</ul>
-				</div>
-		  </div>
-		</div>
-	</section>
+<section class="site-map">
+	<div class="container">
+	  <div class="row">
+		<div class="col-12 text-center">
+			<img src="./images/logo.svg" alt="Logo" class="logo mb-2">
+			<ul class="nav justify-content-center">
+				<li class="nav-item">
+					<a class="nav-link" aria-current="page" href="index.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="about.html">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="projects.html">My Work</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contact.html">Contact</a>
+				</li>
+			</ul>
+			</div>
+	  </div>
+	</div>
+</section>
 	  
 	
 
