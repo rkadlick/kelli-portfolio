@@ -1,70 +1,104 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Portfolio</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<title>My Portfolio</title>
-</head>
+  <body>
+    <!-- Nav Bar -->
 
-<body>
-	<!-- Nav Bar -->
+    <nav
+      class="navbar navbar-expand-md navbar-r sticky-top bg-white"
+      aria-label="Fourth navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../images/logo.svg" alt="Logo" class="logo mb-2"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04"
+          aria-controls="navbarsExample04"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-	<nav class="navbar navbar-expand-md navbar-r sticky-top bg-white" aria-label="Fourth navbar example">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Logo" class="logo mb-2"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-				aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarsExample04">
-				<ul class="navbar-nav ms-auto mb-md-0 p-4 align-items-center">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="projects.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.linkedin.com/in/kelli-larrubia/"><i class="fab fa-linkedin fa-2x"></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav ms-auto mb-md-0 p-4 align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../projects.html">My Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/kelli-larrubia/"
+                ><i class="fab fa-linkedin fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Project Intro -->
     <section class="project-intro">
-    <div class="container mt-4">
+      <div class="container mt-4">
         <div class="project-intro">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Back</a></li>
+              <li class="breadcrumb-item"><a href="../projects.html"> < Back to My Work</a></li>
             </ol>
           </nav>
-          <h1 class="text-center">Project Title</h1>
-          <div class="row">
-            <div class="col-md-6">
+          <h1 class="text-center">Writing & Science Interdisciplinary Unit: Capstone Excerpt</h1>
+          <div class="row align-items-center mt-5">
+			<div class="col-sm-5 order-sm-3">
+				<img
+				  src="../images/projects/writing.png"
+				  alt="Project Image"
+				  class="img-fluid w-75"
+				/>
+			  </div>
+			  <div class="col-sm-2 d-sm-block d-none order-sm-2"></div>
+            <div class="col-sm-5 order-sm-1 py-4 py-sm-0">
               <p>
-                Your project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                This excerpt is from my masters in Curriculum & Instruction capstone presentation. The interdisciplinary writing and science unit titled, "Pollinator-Friendly Campaign," combines and supplements an existing writing curriculum, Lucy Calkins Writing Workshop, and a district-based science unit  by building opportunities for authenticity and purpose.
               </p>
-            </div>
-            <div class="col-md-6">
-              <img src="../images/p1.png" alt="Project Image" class="img-fluid">
             </div>
           </div>
         </div>
@@ -72,81 +106,74 @@
     </section>
 
     <!-- Project Summary -->
-    <section class="project-intro">
-        <div class="container mt-4">
-            <div class="project-intro">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Back</a></li>
-                </ol>
-              </nav>
-              <h1 class="text-center">Project Title</h1>
-              <div class="row">
-                <div class="col-md-6">
-                  <p>
-                    Your project description goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                </div>
-                <div class="col-md-6">
-                  <img src="../images/p1.png" alt="Project Image" class="img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    <section class="project-summary bg-secondary">
+      <div class="container mt-4">
+		<p class="summary-text text-white">
+			Nam mauris dui, lobortis eu ligula vitae, pretium vestibulum nisl. Nulla sit amet lorem sit amet neque faucibus commodo ut a felis. Suspendisse fermentum placerat nibh, ac sagittis massa porttitor euismod. Curabitur in vulputate magna. Vivamus laoreet ullamcorper porta. Fusce sollicitudin gravida nulla, molestie efficitur lectus sodales at. Morbi cursus euismod velit ac vulputate. Etiam in ex id tellus malesuada egestas. Mauris ac nibh accumsan nibh vestibulum lobortis in quis sem. Phasellus non convallis tellus, in pharetra diam. Donec ultrices neque pharetra feugiat sagittis. Donec quis neque purus. Maecenas vel pharetra felis. 
+		</p>
+		<p class="summary-text text-white">
+			Donec egestas massa sit amet volutpat tincidunt. Sed vel eros non mi scelerisque venenatis. Proin accumsan sodales elit, vel tincidunt magna ultrices eu. Donec in gravida urna. Integer ac mattis massa, et tempus neque. Cras efficitur nunc sem, in imperdiet metus varius ut. Praesent pharetra vehicula nisi vitae rhoncus. Phasellus non ipsum a urna congue facilisis. Vestibulum eget orci eu sapien eleifend faucibus. Nunc ligula magna, efficitur bibendum rhoncus vitae, tempus quis tortor. Mauris efficitur bibendum nulla in gravida. 		</p>
+		<p class="summary-text text-white">
+			Nunc lobortis metus vitae felis sollicitudin imperdiet. Nullam at vestibulum nisi, sed aliquam lorem. Integer sed sem commodo, venenatis nisi a, cursus leo. Nam egestas consectetur turpis, ut tempor purus consequat a. Integer porttitor porttitor lacus a pharetra. Ut venenatis nunc diam, non ullamcorper urna suscipit auctor. Suspendisse dignissim sapien eu lectus mollis, nec eleifend massa ornare. Duis pharetra viverra mattis. Suspendisse et quam sed ex sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam interdum tortor sollicitudin augue dignissim, vel lobortis metus ultrices. </p>
+	  </div>
+    </section>
 
-	<!-- PDF Section -->
+    <!-- PDF Section -->
 
     <section class="pdf">
-        <div class="container project-pdf" id="project1"></div>
+      <div class="container project-pdf" id="project1"></div>
     </section>
-    
 
-	<!-- Contact Section -->
+    <!-- Contact Section -->
 
-	<section class="contact-me bg-dark">
-		<div class="container">
-		  <div class="row">
-			  <div class="col-md-6 text-white text-center my-auto">
-				<h3>Please reach out and connect</h3>
-				<button class="btn btn-primary">Connect</button>
-			  </div>
-			<div class="col-md-6 align-items-center">
-			  <img src="../images/contact.png" alt="Contact Image" class="contact-image">
-			</div>
-		  </div>
-		</div>
-	  </section>
-	  
-	  <!-- Site Map -->
+    <section class="contact-me bg-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-white text-center my-auto">
+            <h3>Please reach out and connect</h3>
+            <button class="btn btn-primary">Connect</button>
+          </div>
+          <div class="col-md-6 align-items-center">
+            <img
+              src="../images/contact.png"
+              alt="Contact Image"
+              class="contact-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-	  <section class="site-map">
-		<div class="container">
-		  <div class="row">
-			<div class="col-12 text-center">
-				<img src="../images/logo.png" alt="Logo" class="logo mb-2">
-				<ul class="nav justify-content-center">
-					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About Me</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="projects.html">Projects</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-				</ul>
-				</div>
-		  </div>
-		</div>
-	</section>
-	  
-	
+    <!-- Site Map -->
 
-</body>
-<script src="../js/pdfobject.js"></script>
-<script>PDFObject.embed("../pdfs/project.pdf", "#project1");</script>
+    <section class="site-map">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <img src="../images/logo.svg" alt="Logo" class="logo mb-2" />
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="projects.html">My Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="../js/pdfobject.js"></script>
+  <script>
+    PDFObject.embed("../pdfs/project.pdf", "#project1");
+  </script>
 </html>

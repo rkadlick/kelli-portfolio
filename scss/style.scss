@@ -3,12 +3,14 @@
   --red: #9e416b;
   --purple: #ae87bc;
   --blue: #53758e;
+  --grey: #C0BEBA;
 }
 
 $primary: #ae87bc;
-$secondary: #53758e;
-$headings-font-family: "Jost";
-$font-family-base: "Work Sans";
+$secondary: #f2f2f2;
+$white: #f7f7f7;
+$headings-font-family: "Spectral";
+$font-family-base: "Karla";
 
 img {
   border-radius: 4px;
@@ -20,6 +22,8 @@ img {
 
 .navbar {
   padding: 1rem 7.5rem;
+  border-bottom: 1px solid #e0e0e0; /* Border color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow */
 }
 
 .hero {
@@ -36,8 +40,18 @@ img {
 .project-hero,
 .project-list,
 .contact-form,
+.project-intro,
+.project-summary,
 .pdf {
   padding: 3rem 7.5rem;
+}
+
+.row > .sub-header {
+  width: 70% !important;
+}
+
+.divider {
+  width: 75px !important;
 }
 
 .featured-project-img,
@@ -73,6 +87,9 @@ img {
   .project-hero,
   .project-list {
     padding: 4.5rem 1.5rem;
+  }
+  .row > .sub-header {
+    width: 60% !important;
   }
 }
 
