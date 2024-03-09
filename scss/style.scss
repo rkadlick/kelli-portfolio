@@ -57,6 +57,20 @@ img {
   width: 75px !important;
 }
 
+.sitemap-link{
+  color:#53758e;
+  opacity: 70%;
+  text-decoration: none;
+}
+
+.sitemap-link:hover{
+  opacity: 100%;
+}
+
+.sitemap-link.active{
+  opacity: 100%;
+}
+
 .featured-project-img,
 .contact-image {
   width: 30vh;
