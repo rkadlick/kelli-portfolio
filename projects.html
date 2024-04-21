@@ -50,20 +50,24 @@
 
 	<!-- Hero Section -->
 
-		<section class="project-hero bg-secondary">
-			<div class="container">
-				<div class="row">
-					<div class="col-6">
-						<h1 class="display-6 fw-bold mb-4">Writing & Science Interdisciplinary Unit: Capstone Excerpt</h1>
-						<p class="fw-light mb-4">This excerpt is from my masters in Curriculum & Instruction capstone presentation. The interdisciplinary writing and science unit titled, "Pollinator-Friendly Campaign," combines and supplements an existing writing curriculum, Lucy Calkins Writing Workshop, and a district-based science unit  by building opportunities for authenticity and purpose.</p>
-						<a href="./projects/writing-science.html" class="btn btn-primary btn-lg px-2">Learn More</a>
+	<section class="project-hero bg-secondary">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1 class="display-6 fw-bold mb-4">Writing & Science Interdisciplinary Unit: Capstone Excerpt</h1>
+					<div class="col-md-6 d-lg-none"> <!-- Display image only on smaller screens -->
+						<img src="./images/projects/writing.png" alt="projects hero" class="w-100 mb-4">
 					</div>
-					<div class="col-6">
-						<img src="./images/projects/writing.png" alt="projects hero" class="w-75 mx-auto d-block">
-					</div>
+					<p class="fw-light mb-4">This excerpt is from my masters in Curriculum & Instruction capstone presentation. The interdisciplinary writing and science unit titled, "Pollinator-Friendly Campaign," combines and supplements an existing writing curriculum, Lucy Calkins Writing Workshop, and a district-based science unit  by building opportunities for authenticity and purpose.</p>
+					<button class="custom-btn"><a href="./projects/writing-science.html" class="p-2 fs-4">Learn More</a></button>
 				</div>
+					<div class="col-md-6 d-lg-block d-none"> <!-- Display image only on larger screens -->
+						<img src="./images/projects/writing.png" alt="projects hero" class="w-100 mb-4">
+					</div>
 			</div>
-		</section>
+		</div>
+	</section>
+	
 
 	<!-- Projects Section -->
 	<section class="project-list">
@@ -73,18 +77,15 @@
 				<h2 class="sub-header text-center mb-0">My Work</h2>
 				<img src="./images/rightDivider.svg" class="divider">
 			</div>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3 g-4">
 				<div class="col">
 				<div class="m-1 card p-4 h-100 bg-secondary">
 					<img src="./images/projects/mathProblems.png" alt="project 1" class="card-img-top">
 					<div class="card-body">
 					<h2 class="card-title">Problem-Based Learning: Math</h2>
+					<a href="./pdfs/math-problems.pdf" class="fs-5 my-2 d-block">View PDF</a>
 					<p class="card-text">In this math sample, I outline how teachers can utilize a word problem to address mathematical standards, how to intervene for support and enrichment, and how to structure a math lesson around the problem of the day.</p>
 				</div>
-					<div class="card-footer d-flex bg-secondary border-0">
-						<a href="./about.html" class="btn btn-primary btn-lg px-2 ms-auto">Read More</a>
-					</div>
-					
 				</div>
 				</div>
 				<div class="col">
@@ -92,12 +93,9 @@
 					<img src="./images/projects/intelligence.png" alt="project 1" class="card-img-top">
 					<div class="card-body">
 					<h2 class="card-title">Math Unit & Sample Lesson</h2>
+					<a href="./pdfs/math-unit.pdf" class="fs-5 my-2 d-block">View PDF</a>
 					<p class="card-text">This sample was influenced by Howard Gardner's Theory of Multiple Intelligences, and the Universal Design for Learning model. Highlighted portions reflect pedagogy, teaching style, lesson structure, and depth of knowledge in standards-aligned math instruction.</p>
 				</div>
-					<div class="card-footer d-flex bg-secondary border-0">
-						<a href="./about.html" class="btn btn-primary btn-lg px-2 ms-auto">Read More</a>
-					</div>
-					
 				</div>
 				</div>
 				<div class="col">
@@ -105,12 +103,9 @@
 					<img src="./images/projects/balancedEq.png" alt="project 1" class="card-img-top">
 					<div class="card-body">
 					<h2 class="card-title">TPT sample: Balanced Equations</h2>
-					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta, nunc
-						id blandit congue, ligula nibh rutrum velit, vel egestas </p>
+					<a href="./pdfs/tpt-equations.pdf" class="fs-5 my-2 d-block">View PDF</a>
+					<p class="card-text">This balancing equations resource provides addition fact fluency practice. It includes 80+ pages of scaffolded practice, helping students transfer their numeracy and fact fluency skills within 20 from concrete → pictorial stages, part of the CPA math instructional model. </p>
 					</div>
-						<div class="card-footer d-flex bg-secondary border-0">
-							<a href="./about.html" class="btn btn-primary btn-lg px-2 ms-auto">Read More</a>
-						</div>
 				</div>
 				</div>
 			</div>
@@ -129,7 +124,7 @@
 			  <div class="row">
 				  <div class="col-md-6 text-black text-center my-auto">
 					<p class="fs-5">Please reach out and connect</p>
-					<a href="./contact.html" class="btn btn-primary btn-lg px-2">Connect</a>
+					<button class="custom-btn mb-3"><a href="./contact.html" class="p-2 fs-4">Connect</a></button>
 				  </div>
 				<div class="col-md-6 align-items-center">
 				  <img src="./images/profile/kelli3.JPG" alt="Contact Image" class="contact-image">
@@ -164,7 +159,7 @@
 		</div>
 	</section>
 	  
-	
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
