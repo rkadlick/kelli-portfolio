@@ -16,6 +16,7 @@ app.use(express.static('public'));
 
 // Define a POST route for handling form submissions
 app.post('/contact', (req, res) => {
+  console.log('Received form data:', req.body);
   // Extract form data from the request body
   const { name, email, message } = req.body;
 
