@@ -1,22 +1,23 @@
 // Import necessary modules
 require('dotenv').config();
+const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
-const express = require('express');
 
+// Create an Express app
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Body parser middleware
-app.use(bodyParser.urlencoded({ extended: false }));
+// Use middleware to parse JSON and URL-encoded bodies
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Simple contact form route
+// Define a POST route for handling form submissions
 app.post('/contact', (req, res) => {
-  console.log('TEST')
+  // Extract form data from the request body
   const { name, email, message } = req.body;
 
-  // Email configuration
+  // Create a Nodemailer transporter
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
@@ -25,6 +26,7 @@ app.post('/contact', (req, res) => {
     },
   });
 
+  // Configure email options
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
@@ -32,16 +34,16 @@ app.post('/contact', (req, res) => {
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
   };
 
+  // Send the email
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return res.status(500).send(error.toString());
+      console.error('Error:', error);
+      return res.status(500).send('Internal Server Error');
     }
-    res.status(200).send('Message sent: ' + info.response);
+    console.log('Email sent:', info.response);
+    res.status(200).send('Message sent successfully');
   });
 });
-
-// Serve static files (if needed)
-app.use(express.static('public'));
 
 // Start the server
 app.listen(port, () => {
