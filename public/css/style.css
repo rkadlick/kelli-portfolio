@@ -8,6 +8,10 @@
 img {
   border-radius: 4px; }
 
+::placeholder {
+  color: #ae3;
+  /* Change the color to your desired color */ }
+
 .fade {
   transition-duration: 5s !important; }
 
@@ -49,6 +53,9 @@ img {
 .custom-btn:after {
   width: 0%;
   height: 2px; }
+
+.custom-btn:active {
+  box-shadow: inset 0 0 10px #ae87bc; }
 
 .custom-btn:hover:before {
   height: 100%; }

@@ -3,19 +3,30 @@ require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const multer = require('multer');
 
 // Create an Express app
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Use middleware to parse JSON and URL-encoded bodies
+// Use multer for handling multipart form data
+const upload = multer();
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static('public'));
 
+// Allow requests from localhost
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  next();
+});
+
 // Define a POST route for handling form submissions
-app.post('/contact', (req, res) => {
+app.post('/api/contact', upload.none(), (req, res) => {
   console.log('Received form data:', req.body);
   // Extract form data from the request body
   const { name, email, message } = req.body;
