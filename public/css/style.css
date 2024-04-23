@@ -199,6 +199,9 @@ img {
   .row > .sub-header {
     width: 60% !important; } }
 @media screen and (max-width: 576px) {
+  .divider {
+    width: 55px !important; }
+
   .navbar {
     padding: 0.5rem; }
 
