@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	  formData.forEach((value, key) => {
 		formDataObject[key] = value;
 	  });
-	  console.log(formData);
+	  // console.log(formData);
   
 	  // Send form data to server using fetch or XMLHttpRequest
 	  fetch('/api/contact', {
