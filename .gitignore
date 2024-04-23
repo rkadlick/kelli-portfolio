@@ -40,4 +40,4 @@ Desktop.ini
 .vscode/
 
 # sass
-public/.sass-cache/
+public/.sass-cache
