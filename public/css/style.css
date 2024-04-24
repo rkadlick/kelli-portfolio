@@ -10,12 +10,8 @@ img {
   image-orientation: from-image; }
 
 .navbar {
-  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.70) !important;
-  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.85) !important; }
-
-::placeholder {
-  color: #ae3;
-  /* Change the color to your desired color */ }
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.85) !important;
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.7) !important; }
 
 .fade {
   transition-duration: 5s !important; }
