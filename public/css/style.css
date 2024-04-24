@@ -9,6 +9,10 @@ img {
   border-radius: 4px;
   image-orientation: from-image; }
 
+.navbar {
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.70) !important;
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.85) !important; }
+
 ::placeholder {
   color: #ae3;
   /* Change the color to your desired color */ }

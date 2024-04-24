@@ -17,8 +17,9 @@ img {
   image-orientation: from-image;
 }
 
-::placeholder {
-  color: #ae3; /* Change the color to your desired color */
+.navbar{
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.70) !important;
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.85) !important;
 }
 
 .fade{
