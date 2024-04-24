@@ -10,8 +10,8 @@ img {
   image-orientation: from-image; }
 
 .navbar {
-  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.85) !important;
-  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.7) !important; }
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 1) !important;
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.65) !important; }
 
 .fade {
   transition-duration: 5s !important; }
