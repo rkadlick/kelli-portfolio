@@ -17,6 +17,10 @@ img {
   image-orientation: from-image;
 }
 
+a {
+  color: var(--blue);
+}
+
 .navbar{
   --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 1) !important;
   --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.65) !important;
